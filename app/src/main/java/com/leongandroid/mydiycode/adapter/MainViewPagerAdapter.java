@@ -18,11 +18,11 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new TopicListFragment();
+                return TopicListFragment.newInstance();
             case 1:
-                return new NewsListFragment();
+                return NewsListFragment.newInstance();
             case 2:
-                return new SitesListFragment();
+                return SitesListFragment.newInstance();
             default:
                 return null;
         }
